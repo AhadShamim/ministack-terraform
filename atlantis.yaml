@@ -1,0 +1,15 @@
+version: 3
+autodiscover:
+  # Disables auto-discovery so Atlantis follows our explicit rules below
+  enabled: false
+projects:
+  - name: ministack-infra
+    # The directory where main.tf lives
+    dir: .
+    autoplan:
+      when_modified:
+        - "*.tf"
+        - "modules/**/*.tf"
+        - "modules/s3_frontend/index.html"
+      enabled: true
+    apply_requirements: [mergeable]
