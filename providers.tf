@@ -22,5 +22,6 @@ provider "aws" {
     rds      = "http://localhost:4566"
     iam      = "http://localhost:4566"
     ecr      = "http://localhost:4566"
+    eks      = "http://localhost:4566"
   }
 }

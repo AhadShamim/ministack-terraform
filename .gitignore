@@ -16,3 +16,4 @@ crash.log
 # Local system files
 .DS_Store
 node_modules/
+modules/ecs_backend/
